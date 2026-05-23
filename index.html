@@ -12,7 +12,7 @@
             --bg-bayou: linear-gradient(135deg, #d8eaff 0%, #b6d8ff 100%); 
             --gold-primary: #86aedb; 
             --gold-secondary: #c9e0ff; 
-            --text-light: #20354f; /* Oscurecido para contraste óptimo */
+            --text-light: #20354f; 
             --text-muted: #567699; 
             --magic-glow: rgba(182, 216, 255, 0.6);
         }
@@ -155,8 +155,10 @@
             bottom: -50px;
             width: 100%;
             text-align: center;
-            font-family: 'Cinzel', serif;
-            font-size: 14px;
+            /* Cambiado a Montserrat para asegurar compatibilidad con la Ñ */
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
             color: var(--text-light);
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -178,7 +180,8 @@
         /* Contenido de la Invitación Principal */
         #main-invitation {
             min-height: 100vh;
-            background: var(--bg-dark) url('assets/imagen.jpg') no-repeat center center;
+            /* Actualizado al recurso fondo.jpg */
+            background: var(--bg-dark) url('assets/fondo.jpg') no-repeat center center;
             background-size: cover;
             background-attachment: fixed;
             position: relative;
@@ -223,8 +226,9 @@
 
         /* Tipografía Avanzada */
         .section-tag {
-            font-family: 'Cinzel', serif;
-            font-size: 12px;
+            /* Cambiado a Montserrat para evitar que se corte la Ñ */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
             letter-spacing: 5px;
             color: var(--text-muted);
             text-transform: uppercase;
@@ -539,7 +543,7 @@
                 </svg>
             </div>
             <div class="envelope"></div>
-            <div class="envelope-text">Mis XV Años<br><span style="color: var(--text-light); font-size: 16px; letter-spacing: 5px; font-weight: 600;">Natalia</span></div>
+            <div class="envelope-text">Mis XV Años<br><span style="font-family: 'Cinzel', serif; color: var(--text-light); font-size: 16px; letter-spacing: 5px; font-weight: 600;">Natalia</span></div>
             <div class="hint-text">Toca el sello para abrir</div>
         </div>
     </div>
